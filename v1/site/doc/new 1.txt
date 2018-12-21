@@ -1,0 +1,44 @@
+<HTML>
+  <HEAD>
+    <META charset="UTF-8">
+	<SCRIPT src="../js/iQuery.js"></SCRIPT>
+	<STYLE>
+	body{background-color:#F9F8F6;}
+    h1, h2, h3, h4, h5, h6{font-family:"courier";color:#1f252e;letter-spacing:-1px;word-spacing:-5px;}
+	#navbar ul {display:none;background-color:#f90;position:absolute;top:100%;}
+    #navbar, #navbar ul {margin:0;padding:0;list-style-type:none;}
+    #navbar {height: 30px;background-color:#666;padding-left:25px;width:360;}
+    #navbar li {float:left;position:relative;height:100%;}
+    #navbar li a {display: block;padding:6px;width:100px;color:#fff;text-decoration:none;text-align:center;cursor:default;}
+	#iframe1 {width:90%;height:80%;margin-top:10px;margin-bottom:10px;border: 2px #C34D0A solid}
+	#button1, #button2 {background-color:#666;border:none;color:white;}
+	#li1 {background-color:#f90}
+    </STYLE>
+  </HEAD>
+  <!---->
+  <BODY>
+    <DIV id="div1">
+	  <CENTER>
+	    <DIV id="top_menu">
+	      <ul id="navbar">
+            <li id="li1"><a>Paint.net</a></li>
+            <li id="li2"><a>Загрузка</a></li>
+            <li id="li3"><a>Установка</a></li>
+          </ul>
+	    </DIV>
+	  <!---->
+	  <h2>Hi!<br></h2>
+	  <h4 id="terms">you can view <a href="404.html"><br>terms of use</a></h5>
+	  <h4 id="source">you can view <a href="404.html"><br>source</a></h5>
+	  <h4 id="home">you can go to <a href="../index.html">home page</a></h5>
+	  <div class="circle"><img id="arrow" src="arrow.png"></div>
+	
+		<input type="button" id="button1" onclick="back()" value="Назад">
+        <input type="button" id="button2" onclick="enter()" value="Дальше">
+	</center>
+	</DIV>
+	<!---->
+    <SCRIPT src="../js/myjs2.js"></SCRIPT>
+    <!---->
+  </BODY>
+</HTML>

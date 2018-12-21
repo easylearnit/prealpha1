@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<script src="../js/iQuery.js"></script>
+	<style>
+	body{background-color:#F9F8F6;}
+    h2, h4{font-family:"courier";color:#1f252e;letter-spacing:-1px;word-spacing:-5px;}
+	h4#home{position:absolute;bottom:0;left:42%;letter-spacing:0px;}
+	h4#terms{position:absolute;left:20;top:42%;letter-spacing:0px;}
+	h4#source{position:absolute;right:20;top:42%;letter-spacing:0px;}
+	a{color:#B03F35;text-decoration:none;cursor:default;}
+	.circle{width:130;margin-top:140;border-radius:50%;height:130;border:10px red solid;}
+	.circle{animation-name:circle;animation-duration:15s;animation-iteration-count:infinite;}
+	#arrow{height:100;width:100;margin:15;}
+	#arrow{animation-name:arrow;animation-duration:7s;animation-iteration-count:infinite;}
+	@keyframes circle{
+    0%{border:10px red solid;}
+    14%{border:10px yellow solid;}
+    28%{border:10px green solid;}
+	42%{border:10px #00BFFF solid;}
+	57%{border:10px blue solid;}
+	71%{border:10px purple solid;}
+	85%{border:10px red solid;}
+    }
+	@keyframes arrow{
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(90deg);}
+    50%{transform: rotate(180deg);}
+	75%{transform: rotate(90deg);}
+    }
+    </style>
+  </head>
+  <!---->
+  <body>
+    <center>
+	  <h2>We can't find page<br>eroor 404</h2>
+	  <h4 id="terms">you can view <a href="404.html">terms of use</a></h5>
+	  <h4 id="source">you can view <a href="404.html">source</a></h5>
+	  <h4 id="home">you can go to <a href="../index.html">home page</a></h5>
+	  <div class="circle"><img id="arrow" src="arrow.png"></div>
+	</center>
+  </body>
+</html>
+<!--@keyframes circle{
+    0%{border:10px red solid;}
+    33%{border:10px green solid;}
+    66%{border:10px blue solid;}
+	100%{border:10px red solid;}
+    }-->

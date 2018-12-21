@@ -1,0 +1,43 @@
+<HTML>
+  <HEAD>
+    <META charset="UTF-8">
+	<SCRIPT src="../js/iQuery.js"></SCRIPT>
+	<STYLE>
+	body {background-color:#F9F8F6}
+	p, body, .inp2, input{font-family:"courier";}
+	#button1, #button2 {background-color:#666;border:none;color:white;}
+	.inp2{border:2px #C34D0A solid;font-family:"courier";background-color:#F9F8F6;color:#666;}
+	img{border:2px #C34D0A solid;width:275px;height:171.5px;}
+	#lol{width:275px;height:171.5px;padding:5px;}
+    </STYLE>
+  </HEAD>
+  <!---->
+  <BODY id="body1">
+    <DIV id="div1">
+	  <DIV id="top1">
+	    <input type="button" id="button1" value="day" onclick="night(0)">
+		<input type="button" id="button2" value="night" onclick="night(1)">
+	  </DIV>
+	  <!---->
+	  <CENTER>
+	    <DIV id="div_iframe">
+	      <DIV id="img"></DIV>
+	    </DIV>
+	  <CENTER>
+	</DIV>
+	<!---->
+	<CENTER>
+	  <input type="text" class="inp2" id="inp" value="" disabled></input>
+	</CENTER>
+    <!---->
+    <SCRIPT src="../js/myjs.js"></SCRIPT>
+	<SCRIPT>
+	$(document).ready(function(){
+	for(var i=1;i<7;i++){
+    $('DIV#img').append('<div id="lol"><img src="'+i+'.jpg"></div>');
+	}
+	$('DIV#img img').append('<div id="lol"><img src="'+i+'.jpg"></div>');
+	})
+	</SCRIPT>
+  </BODY>
+</HTML>
